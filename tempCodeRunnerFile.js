@@ -1,0 +1,1 @@
+let {category} = pizza
