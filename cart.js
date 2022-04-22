@@ -83,7 +83,15 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 
 /*
     TEXT ANSWER HERE
+    for my customer object I decided on these four parameters.
 
+First is 'age'. This is for the restaurant to know if the customer is older than 21, so if they'd like they could be seated at the bar or offered a alcholic drink menu. This property will be a number datatype.
+
+Second is whether the custoomer is Vegan or not. This will tell the restaurant if the customer should be given details about a secondary menu with vegan options, and this property will be a boolean value.
+
+Third is the entree option, which will be a string datatype and will tell restaurant what entree to make for the customer.
+
+Fourth is the drink option, and like the entree option it will be a string datatype to tell restaurant what drink to get for customer.
 */
 
 /*
@@ -92,3 +100,9 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 */
 
 //CODE HERE
+let CustomerBob = {
+    age: 22,
+    vegan: false,
+    entree: "Tacos",
+    drink: "Diet Soda",
+}
