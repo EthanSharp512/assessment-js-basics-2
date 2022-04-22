@@ -195,8 +195,15 @@ const foodArr = [{
 */
 
 //CODE HERE
+function filterByProperty(property, number, type) {
+    let filtArr = foodArr.filter(property)
 
-
+    if(type === 'above') {
+        return property > number
+    } else if(type === 'below') {
+        return property < number
+    }
+}
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -205,3 +212,4 @@ const foodArr = [{
 */
 
 //CODE HERE
+foodArr.filterByProperty(price, 5, "above")
