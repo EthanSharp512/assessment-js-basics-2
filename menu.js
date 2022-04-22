@@ -151,9 +151,9 @@ const foodArr = [{
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(food => food.tags('Gluten-Free'))
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 

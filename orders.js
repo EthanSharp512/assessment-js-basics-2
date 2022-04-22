@@ -30,7 +30,19 @@
 */
 
 //CODE HERE
+class Ticket {
+    constructor(items, orderTime, customerId) {
+        this.items = items,
+        this.orderTime = orderTime,
+        this.customerId = customerId,
+        this.staus = queued
+    }
 
+    updateStatus(newStatus) {
+        this.staus = newStatus
+        console.log(`The order for customer ${this.customerId} is now ${this.staus}.`)
+    }
+}
 
 
 /*
