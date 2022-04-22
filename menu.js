@@ -98,6 +98,42 @@ console.log(category)
 */
 
 //CODE HERE
+const foodArr = [{
+    name : "Alpha",
+    price : 10,
+    category: "Entree",
+    popularity: 10,
+    rating: 7,
+    tags: ["Personal pizza", "Meat-Lovers", "Gluten-Free"]
+}, {
+    name : "Beta",
+    price : 9,
+    category: "Entree",
+    popularity: 4,
+    rating: 9,
+    tags: ["Small", "Cheese"]
+}, {
+    name : "Charlie",
+    price : 12,
+    category: "Entree",
+    popularity: 6,
+    rating: 1,
+    tags: ["Medium", "Chicago Style", "Gluten-Free"]
+}, {
+    name : "Delta",
+    price : 15,
+    category: "Entree",
+    popularity: 9,
+    rating: 5,
+    tags: ["Large", "Cheese"]
+}, {
+    name : "Echo Bread Sticks",
+    price : 4,
+    category: "Appetizer",
+    popularity: 9,
+    rating: 3,
+    tags: ["Shareable", "Gluten-Free"]
+}]
 
 
 
