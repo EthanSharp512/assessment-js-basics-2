@@ -43,7 +43,7 @@ class Employee{
 */
 
 //CODE HERE
-let empOne = new Employee("Ethan", "weekday mornings")
+let empOne = new Employee("Ethan", "weekday mornings, weekday afternoons")
 /*
     Call the `getSchedule` method on the
     `empOne` object.
@@ -92,7 +92,20 @@ empTwo.name = "Nick"
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts)
+        this.employees = employees
+    }
 
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+
+    addEmployee(emp) {
+        return this.employees.push(emp)
+    }
+}
 
 
 /*
@@ -107,7 +120,7 @@ empTwo.name = "Nick"
 */
 
 //CODE HERE
-
+let manager = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -115,6 +128,8 @@ empTwo.name = "Nick"
 */
 
 //CODE HERE
+
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -124,6 +139,8 @@ empTwo.name = "Nick"
 
 //CODE HERE 
 
+manager.addEmployee("Coach")
+
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -131,3 +148,5 @@ empTwo.name = "Nick"
 */
 
 //CODE HERE
+
+manager.getEmployees()
