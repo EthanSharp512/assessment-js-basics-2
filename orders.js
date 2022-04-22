@@ -35,7 +35,7 @@ class Ticket {
         this.items = items,
         this.orderTime = orderTime,
         this.customerId = customerId,
-        this.status = stauts
+        this.status = {status : 'queued'}
     }
 
     updateStatus(newStatus) {
@@ -66,5 +66,5 @@ let firstTicket = new Ticket("Pizza, bread, and soda", "7:03", 575)
 */
 
 //CODE HERE
-
+firstTicket.updateStatus()
 firstTicket.updateStatus('cooking')
