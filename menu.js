@@ -32,6 +32,14 @@
 
 //CODE HERE
 
+let pizza = {
+    name : "Epic",
+    price : 50,
+    category: "Entree",
+    popularity: 3,
+    rating: 10,
+    tags: ["family size", "extra large"]
+}
 
 
 //////////////////PROBLEM 2////////////////////

@@ -125,7 +125,9 @@ const deals = [
 */
 
 //CODE HERE
-
+let dealNewTitle = deals.title
+let replacedTitel = dealNewTitle.replace('15', '10')
+console.log(dealNewTitle)
 
 
 /*
