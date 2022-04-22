@@ -43,7 +43,7 @@ class Employee{
 */
 
 //CODE HERE
-let empOne = new Employee("Ethan", "weekday mornings, weekday afternoons")
+let empOne = new Employee("Ethan", ["weekday mornings", "weekday afternoons"])
 /*
     Call the `getSchedule` method on the
     `empOne` object.
@@ -65,8 +65,10 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-let empTwo = {...empOne}
-empTwo.name = "Nick"
+let empTwo = {...empOne, name: "Nick"}
+//this^ does same as below
+// let empTwo = {...empOne}
+// empTwo.name = "Nick"
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -103,7 +105,7 @@ class Manager extends Employee {
     }
 
     addEmployee(emp) {
-        return this.employees.push(emp)
+        this.employees.push(emp)
     }
 }
 
@@ -120,7 +122,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-let manager = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"])
+let manager = new Manager("Winston", ["weekday mornings", "weekday afternoons"], ["Cece", "Schmidt"])
 
 /*
     Call the `getEmployees` method on the

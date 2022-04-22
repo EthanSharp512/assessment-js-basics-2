@@ -125,9 +125,8 @@ const deals = [
 */
 
 //CODE HERE
-let replacedTitel = deals.replace('15% Off!','10% Off!')
-console.log(replacedTitel)
 
+deals[0].title = deals[0].title.replace('15', '10')
 
 /*
     The restaurant is going to continue its
@@ -143,3 +142,5 @@ console.log(replacedTitel)
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.trim().replace('March', 'April')
+console.log(deals)
