@@ -59,7 +59,7 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
     return couponApplied
 }
 
-// console.log(calcFinalPrice(20, 5, .06))
+console.log(calcFinalPrice(20, 5, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  

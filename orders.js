@@ -31,7 +31,7 @@
 
 //CODE HERE
 class Ticket {
-    constructor(items, orderTime, customerId, stauts) {
+    constructor(items, orderTime, customerId, status) {
         this.items = items,
         this.orderTime = orderTime,
         this.customerId = customerId,
